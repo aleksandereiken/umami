@@ -43,7 +43,7 @@
     "download-language-names": "node scripts/download-language-names.js",
     "change-password": "node scripts/change-password.js",
     "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install",
-    "postbuild": "node scripts/postbuild.js",
+    "postbuild": "node scripts/postbuild.js && rm -rf node_modules && pnpm install --prod --no-optional",
     "test": "jest",
     "cypress-open": "cypress open cypress run",
     "cypress-run": "cypress run cypress run",
@@ -123,7 +123,8 @@
     "ua-parser-js": "^2.0.6",
     "uuid": "^11.1.0",
     "zod": "^4.1.13",
-    "zustand": "^5.0.9"
+    "zustand": "^5.0.9",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
@@ -168,7 +169,6 @@
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.1",
     "tsup": "^8.5.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.9.3"
+    "tsx": "^4.19.0"
   }
 }
