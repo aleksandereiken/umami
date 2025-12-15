@@ -123,7 +123,8 @@
     "ua-parser-js": "^2.0.6",
     "uuid": "^11.1.0",
     "zod": "^4.1.13",
-    "zustand": "^5.0.9"
+    "zustand": "^5.0.9",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
